@@ -18,41 +18,27 @@
       href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- navigation bar -->
-
     <nav id="navbar" class="nav">
       <ul class="nav-list">
-        <li>
-          <a href="#welcome-section">About</a>
-        </li>
-        <li>
-          <a href="#projects">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- nav bar end -->
-
     <!-- welcome page -->
-
     <section id="welcome-section" class="welcome-section">
       <h1>Hey I am Raunak Neupane</h1>
       <p>a Student of TCMIT</p>
     </section>
 
-    <!-- welcome section end -->
-
     <!-- project section -->
-
     <section id="projects" class="projects-section">
       <h2 class="projects-section-header">Some of my best projects:</h2>
-
       <div class="projects-grid">
         <a
           href="https://raunak-neupane.com.np/"
@@ -65,8 +51,7 @@
             alt="project"
           />
           <p class="project-title">
-            <span class="code">&lt;</span>
-            E-Commerce Website
+            <span class="code">&lt;</span> E-Commerce Website
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -81,8 +66,7 @@
             alt="project"
           />
           <p class="project-title">
-            <span class="code">&lt;</span>
-            Portfolio Website
+            <span class="code">&lt;</span> Portfolio Website
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -97,8 +81,7 @@
             alt="project"
           />
           <p class="project-title">
-            <span class="code">&lt;</span>
-            Netflix Clone
+            <span class="code">&lt;</span> Netflix Clone
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -113,8 +96,7 @@
             alt="project"
           />
           <p class="project-title">
-            <span class="code">&lt;</span>
-            Facebook Clone
+            <span class="code">&lt;</span> Facebook Clone
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -129,8 +111,7 @@
             alt="project"
           />
           <p class="project-title">
-            <span class="code">&lt;</span>
-            Twitter Clone
+            <span class="code">&lt;</span> Twitter Clone
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -145,8 +126,7 @@
             alt="project"
           />
           <p class="project-title">
-            <span class="code">&lt;</span>
-            Youtube Clone
+            <span class="code">&lt;</span> Youtube Clone
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -157,6 +137,7 @@
       ></a>
     </section>
 
+    <!-- contact section -->
     <section id="contact" class="contact-section">
       <div class="contact-section-header">
         <h2>CONTACT ME...</h2>
@@ -167,33 +148,64 @@
           href="https://www.facebook.com/raunakneupane/"
           target="_blank"
           class="btn contact-details"
-          id="contact-details-editor"
           ><i class="fab fa-facebook-square"></i> Facebook</a
         >
         <a
-          id="profile-link"
           href="https://github.com/rezy-dev"
           target="_blank"
           class="btn contact-details"
-          id="contact-details-editor"
           ><i class="fab fa-github"></i> GitHub</a
         >
         <a
           href="https://twitter.com/rezydev"
           target="_blank"
           class="btn contact-details"
-          id="contact-details-editor"
           ><i class="fab fa-twitter"></i> Twitter</a
         >
-        <a
-          href="mailto:info@raunak-neupane.com.np"
-          class="btn contact-details"
-          id="contact-details-editor"
-        >
-          <i class="fas fa-at"></i> Send a mail</a
+        <a href="mailto:info@raunak-neupane.com.np" class="btn contact-details"
+          ><i class="fas fa-at"></i> Send a mail</a
         >
       </div>
+
+      <!-- Contact Form -->
+      <form
+        id="contact-form"
+        class="contact-form"
+        onsubmit="return validateForm()"
+      >
+        <div class="form-container">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="form-container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="form-container">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">Send Message</button>
+      </form>
     </section>
+
     <footer>
       <p>Student of TCMIT</p>
       <p>
@@ -206,5 +218,8 @@
         >
       </p>
     </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>
